@@ -133,7 +133,7 @@ legend {
   letter-spacing: 0.15em;
 }
 
-.head-wrap {
+.header-wrap {
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
@@ -482,19 +482,6 @@ head {
           align-items: center;
   gap: 16px;
   margin-bottom: 8px;
-}
-
-.footer__contact {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
 }
 
 .social__icon {

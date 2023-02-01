@@ -7,6 +7,11 @@
     padding-bottom: 34px;
     // border-top: 1px solid var(--mainColor);
 }
+// .footer__contact{
+//     display: flex;
+//     justify-content: center;
+//     flex-direction: column;
+// }
 .footer{
     .social__list{
         display: flex;
@@ -16,11 +21,7 @@
         margin-bottom: 8px;
     }
 }
-.footer__contact{
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-}
+
 
 .social__icon{
     fill: #b3b3b3;
