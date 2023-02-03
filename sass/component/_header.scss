@@ -16,6 +16,16 @@ head{
     padding-bottom: 4px;
 
 }
+.logo{
+    font-family: 'ultra', serif;
+    font-size: 22px;
+    padding-top: 15px;
+    letter-spacing: 0.03em;
+    padding-bottom: 15px;
+    text-transform: uppercase;
+    color: var(--mainColor);
+}
+
 .backdrop{
     @media screen and(max-width: 767px) {
 

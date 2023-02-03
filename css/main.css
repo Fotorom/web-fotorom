@@ -128,7 +128,7 @@ legend {
       -ms-flex-pack: start;
           justify-content: flex-start;
   min-height: 100vh;
-  font-family: Montserrat, sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: normal;
   letter-spacing: 0.15em;
 }
@@ -167,6 +167,16 @@ head {
   margin-bottom: 4px;
   padding-top: 4px;
   padding-bottom: 4px;
+}
+
+.logo {
+  font-family: "ultra", serif;
+  font-size: 22px;
+  padding-top: 15px;
+  letter-spacing: 0.03em;
+  padding-bottom: 15px;
+  text-transform: uppercase;
+  color: var(--mainColor);
 }
 
 @media screen and (max-width: 767px) {
@@ -537,7 +547,7 @@ head {
 }
 
 .price__text {
-  font-family: "Roboto";
+  font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.5;
