@@ -15,20 +15,21 @@
 
     <header class="header-wrap">
         <div class="nav-wrap container">
-            <img src="./Image/logo.jpg" alt="логотип" width="100px">
+            <img src="./image/logo.jpg" alt="логотип" width="100px">
             <div class="nav-btn" header__burger>
                 <span class="nav-btn__span"></span>
             </div>
-
-            <nav class="nav" header_menu>
-                <ul class="nav__list ">
-                    <li class="nav__item"><a href="" class="nav__link nav__link--active">Головна</a></li>
-                    <li class="nav__item"><a href="" class="nav__link">Портфоліо</a></li>
-                    <li class="nav__item"><a href="" class="nav__link">Про мене</a></li>
-                    <li class="nav__item"><a href="" class="nav__link">Послуги</a></li>
-                    <li class="nav__item"><a href="" class="nav__link">Контакти</a></li>
-                </ul>
-            </nav>
+            <div class="backdrop" backdrop >            
+                <nav class="nav" header_menu>
+                    <ul class="nav__list ">
+                        <li class="nav__item"><a href="./index.html" class="nav__link nav__link--active">Головна</a></li>
+                        <li class="nav__item"><a href="" class="nav__link">Портфоліо</a></li>
+                        <li class="nav__item"><a href="" class="nav__link">Про мене</a></li>
+                        <li class="nav__item"><a href="./price.html" class="nav__link">Ціни</a></li>
+                        <li class="nav__item"><a href="" class="nav__link">Контакти</a></li>
+                    </ul>
+                </nav>
+            </div>
         </div>
     </header>
 
@@ -38,11 +39,10 @@
         <div class="header__bg header__bg--one"></div>
         <div class="header__bg header__bg--two" ></div>
         <div class="header__bg header__bg--three" ></div>
+
     <div class="hero-wrap container">
         
-        <div class="title-wrap">
             <h1 class="hero__title">Роман Янковський <br>Весільний фотограф</h1>
-        </div>
         
     </div>
 </section>
@@ -56,22 +56,22 @@
 
                         <li class="social-item"><a target="_blank" href="https://www.facebook.com/rfotorom" class="social__link">
                             <svg class="social__icon">
-                                <use href="./Image/svg/iconset.svg#Facebook"></use>
+                                <use href="./image/svg/iconset.svg#Facebook"></use>
                             </svg>
                         </a></li>
         
                         <li class="social__item"><a target="_blank" href="https://www.instagram.com/rfotorom/" class="social__link">
                             <svg class="social__icon">
-                                <use href="./Image/svg/iconset.svg#Instagram"></use>
+                                <use href="./image/svg/iconset.svg#Instagram"></use>
                             </svg>
                         </a></li>
         
                         <li class="social__item"><a href="https://t.me/rfotorom" class="social__link"><svg class="social__icon">
-                            <use href="./Image/svg/iconset.svg#Telegram"></use>
+                            <use href="./image/svg/iconset.svg#Telegram"></use>
                         </svg></a></li>
         
                         <li class="social__item"> <a href="viber://chat?number=%2B380679835129" class="social__link"><svg class="social__icon">
-                            <use href="./Image/svg/iconset.svg#Viber"></use>
+                            <use href="./image/svg/iconset.svg#Viber"></use>
                         </svg></a>
                         </li>
                     </ul>
@@ -81,13 +81,13 @@
                         <li >
                             <a href="tel:+380679835129" class="number__link">
                                 <svg class="footer__icon-phone">
-                                  <use href="./Image/svg/iconset.svg#Phone"></use>
+                                  <use href="./image/svg/iconset.svg#Phone"></use>
                                 </svg>
                             067 983 51 29</a>
                         </li>
                         <li ><a href="tel:+380633192022" class="number__link">
                             <svg class="footer__icon-phone">
-                                <use href="./Image/svg/iconset.svg#Phone"></use>
+                                <use href="./image/svg/iconset.svg#Phone"></use>
                               </svg>
                               063 319 20 22</a>
                         </li>
@@ -115,16 +115,20 @@ setInterval(function(){
 </script>
 
 <script>
-let header__burger = document.querySelectorAll('.nav-btn');
+    let header__burger = document.querySelectorAll('.nav-btn');
     let header_menu = document.querySelector('.nav');
     let back = document.querySelector('body');
-    
-    header__burger.forEach(function (item) {
-       item.onclick = function () {
-          item.classList.toggle('active');
-          header_menu.classList.toggle('active');
-          back.classList.toggle('lock');
-       }
-    });</script>
+    let backdrop = document.querySelector('.backdrop');
+
+        
+        header__burger.forEach(function (item) {
+        item.onclick = function () {
+            item.classList.toggle('active');
+            header_menu.classList.toggle('active');
+            back.classList.toggle('lock');
+            backdrop.classList.toggle('active');
+        }
+       });
+</script>
 </body>
 </html>

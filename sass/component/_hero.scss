@@ -31,13 +31,13 @@
   }
 
   .header__bg--one{
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.6)),url(../Image/b1.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.6)),url(../image/b1.jpg);
   }
   .header__bg--two{
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.6)),url(../Image/b2.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.6)),url(../image/b2.jpg);
   }  
   .header__bg--three{
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.6)),url(../Image/b3.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.6)),url(../image/b3.jpg);
   }
   .hero{
     display: flex;
@@ -56,19 +56,20 @@
   .hero-wrap{
     position: relative;
     z-index: 5;
-
     display: flex;
     justify-content: center;
     align-items: center;
   }
-.title-wrap{
+
+  
+  .hero__title{
+
+
     padding: 6px;
     background-image: linear-gradient(to bottom, rgba(29, 28, 28, 0.3), rgba(69, 69, 72, 0.3));    
     margin: 0 auto;
     border-radius: 2%;
-}
-  
-  .hero__title{
+
     line-height: 1.61;
     text-align: center;
     letter-spacing: .09em;

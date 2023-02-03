@@ -16,17 +16,37 @@ head{
     padding-bottom: 4px;
 
 }
+.backdrop{
+    @media screen and(max-width: 767px) {
+
+    position: fixed;
+    background-color: rgba(34,34,34,.5);
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    right: 0;
+    z-index: 400;
+    opacity: 0;
+    transition: opacity 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
+    pointer-events: none;
+
+    }
+
+    &.active{
+        opacity: 1;
+    }
+}
 .nav{
 
     position: relative;
     transition: transform 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
 
     @media screen and(max-width: 767px) {
-        top: 61px;
+        top: 0;
         position: absolute;
-        right: 0;
+        left: 0;
         z-index: 500;
-        width: 50vw;
+        width: 60vw;
         height: 100vh;
         background-color: #fff;
         transform: translateX(-200%);
@@ -34,7 +54,7 @@ head{
      }
      &.active{
         transform: translateX(0);
-
+        pointer-events: all;
      }
 }
 .nav-btn{
@@ -72,6 +92,10 @@ head{
         transform: scale(0);
     }
 
+    &.active{
+        transform: translateX(-40vw);
+        z-index: 500;
+    }
 
 }
 .nav-btn__span{
@@ -113,6 +137,8 @@ head{
     }
 }
 .nav__link{
+        font-weight: 500;
+
     @media screen and(max-width: 767px) {
         font-size: 24px;
     }
