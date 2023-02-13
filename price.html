@@ -1,193 +1,252 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&family=Roboto:wght@400;500;700;900&family=Ultra&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./css/main.min.css">
-    <link rel="stylesheet" href="./css/main.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Прайс на весільну зйомку" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&family=Roboto:wght@400;500;700;900&family=Ultra&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/main.min.css" />
+    <!-- <link rel="stylesheet" href="./css/main.css" /> -->
 
     <title>Весільний фотограф в Житомирі Роман Янковський</title>
-</head>
-<body class="body-wrap">
-
+  </head>
+  <body class="body-wrap">
     <header class="header-wrap">
-        <div class="nav-wrap container">
-            <!-- <img src="./image/logo.jpg" alt="логотип" width="100px"> -->
-            <p class="logo">fotorom</p>
-            <div class="nav-btn" header__burger>
-                <span class="nav-btn__span"></span>
-            </div>
-            <div class="backdrop" backdrop >            
-                <nav class="nav" header_menu>
-                    <ul class="nav__list ">
-                        <li class="nav__item"><a href="./index.html" class="nav__link ">Головна</a></li>
-                        <li class="nav__item"><a href="" class="nav__link">Портфоліо</a></li>
-                        <li class="nav__item"><a href="" class="nav__link">Про мене</a></li>
-                        <li class="nav__item"><a href="./price.html" class="nav__link nav__link--active">Ціни</a></li>
-                        <li class="nav__item"><a href="" class="nav__link">Контакти</a></li>
-                    </ul>
-                </nav>
-            </div>
+      <div class="nav-wrap container">
+        <!-- <img src="./image/logo.jpg" alt="логотип" width="100"> -->
+        <div class="logo-wrap">
+          <img
+            src="./image/svg/logo-camera.svg"
+            alt="логотип"
+            class="logo__img"
+          />
+          <p class="logo__text">fotorom</p>
         </div>
+        <div class="nav-btn" data-header__burger>
+          <span class="nav-btn__span"></span>
+        </div>
+        <div class="backdrop" data-backdrop>
+          <nav class="nav" data-header_menu>
+            <ul class="nav__list">
+              <li class="nav__item">
+                <a href="./index.html" class="nav__link">Головна</a>
+              </li>
+              <li class="nav__item">
+                <a href="./portfolio.html" class="nav__link">Портфоліо</a>
+              </li>
+              <li class="nav__item">
+                <a href="./about.html" class="nav__link">Про мене</a>
+              </li>
+              <li class="nav__item">
+                <a href="./price.html" class="nav__link nav__link--active"
+                  >Ціни</a
+                >
+              </li>
+              <li class="nav__item">
+                <a href="./contacts.html" class="nav__link">Контакти</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
     </header>
 
-<main class="main-wrap">
-    <section class="">
-         <div class="container">
-            
-            <ul class="price__list">
-                <li class="price__item">
-                    <div class="wrap-price">
-                            <img 
-                            srcset="./image/price-lite.jpg 1x, ./image/price-lite-x2.jpg 2x" 
-                            src="./image/price-lite.jpg" 
-                            alt="Пакет лайт"
-                            width="370px">
-                        <h2 class="price__title">  лайт </h2>
-                    </div>
-                    <div class="wrap-price--text">
-                        <p class="price__text">— Консультація з організації весільного дня</p>
-                        <p class="price__text">— До 4 годин зйомки (від 200 фотографій)</p>
-                        <p class="price__text">— Авторська обробка всіх фотографій</p>
-                        <p class="price__text">— Анонс із 20 кадрів на наступний день після весілля</p>
-                        <p class="price__text">— Повністю готовий матеріал — за 1 тиждень</p>
-                        <p class="price__text price__text--total">— 8000 грн</p>
+    <main class="main-wrap">
+      <section>
+        <div class="container price">
+          <ul class="price__list">
+            <li class="price__item">
+              <div class="wrap-price">
+                <img
+                  srcset="
+                    ./image/price-lite.jpg    1x,
+                    ./image/price-lite-x2.jpg 2x
+                  "
+                  src="./image/price-lite.jpg"
+                  alt="Пакет лайт"
+                  width="370"
+                />
+                <h2 class="price__title">лайт</h2>
+              </div>
+              <div class="wrap-price--text">
+                <p class="price__text">
+                  — Консультація з організації весільного дня
+                </p>
+                <p class="price__text">
+                  — До 4 годин зйомки (від 200 фотографій)
+                </p>
+                <p class="price__text">— Авторська обробка всіх фотографій</p>
+                <p class="price__text">
+                  — Анонс із 20 кадрів на наступний день після весілля
+                </p>
+                <p class="price__text">
+                  — Повністю готовий матеріал — за 1 тиждень
+                </p>
+                <p class="price__text price__text--total">— 8000 грн</p>
+              </div>
+            </li>
 
-                    </div>
-                </li>
+            <li class="price__item">
+              <div class="wrap-price">
+                <img
+                  srcset="
+                    ./image/price-medium.jpg    1x,
+                    ./image/price-medium-x2.jpg 2x
+                  "
+                  src="./image/price-lite.jpg"
+                  alt="Пакет лайт"
+                  width="370"
+                />
+                <h2 class="price__title">стандарт</h2>
+              </div>
+              <div class="wrap-price--text">
+                <p class="price__text">
+                  — Консультація з організації весільного дня
+                </p>
+                <p class="price__text">
+                  — 10 годин зйомки (від 500 фотографій)
+                </p>
+                <p class="price__text">— Авторська обробка всіх фотографій</p>
+                <p class="price__text">
+                  — Анонс із 30 кадрів на наступний день після весілля
+                </p>
+                <p class="price__text">
+                  — Повністю готовий матеріал — за 2 тиждня
+                </p>
+                <p class="price__text price__text--total">— 12000 грн</p>
+              </div>
+            </li>
 
-                <li class="price__item ">
-                    <div class="wrap-price">
-                        <img 
-                        srcset="./image/price-medium.jpg 1x, ./image/price-medium-x2.jpg 2x" 
-                        src="./image/price-lite.jpg" 
-                        alt="Пакет лайт"
-                        width="370px">
-                    <h2 class="price__title"> стандарт</h2>
-                    </div>
-                    <div class="wrap-price--text">
-                        <p class="price__text">— Консультація з організації весільного дня</p>
-                        <p class="price__text">— 10 годин зйомки (від 500 фотографій)</p>
-                        <p class="price__text">— Авторська обробка всіх фотографій</p>
-                        <p class="price__text">— Анонс із 30 кадрів на наступний день після весілля</p>
-                        <p class="price__text">— Повністю готовий матеріал — за 2 тиждня</p>
-                        <p class="price__text price__text--total">— 12000 грн</p>
-                    </div>
-                </li>
-
-                <li class="price__item">
-                    <div class="wrap-price">
-                            <img 
-                            srcset="./image/price-top.jpg 1x, ./image/price-top-x2.jpg 2x" 
-                            src="./image/price-lite.jpg" 
-                            alt="Пакет лайт"
-                            width="370px">
-                        <h2 class="price__title">  максимальний</h2>
-                    </div>
-                    <div class="wrap-price--text">
-                        <p class="price__text">— Консультація з організації весільного дня</p>
-                        <p class="price__text">— 12 годин зйомки (від 600 фотографій)</p>
-                        <p class="price__text">— Авторська обробка всіх фотографій</p>
-                        <p class="price__text">— Анонс із 30 кадрів на наступний день після весілля</p>
-                        <p class="price__text">— Повністю готовий матеріал — за 3 тиждня</p>
-                        <p class="price__text">— Зйомка передвесільної Love story</p>
-                        <p class="price__text">— Виготовлення весільного фотоальбому</p>
-                        <p class="price__text price__text--total">— 15000 грн</p>
-                </li>
-             
-            </ul>
+            <li class="price__item">
+              <div class="wrap-price">
+                <img
+                  srcset="./image/price-top.jpg 1x, ./image/price-top-x2.jpg 2x"
+                  src="./image/price-lite.jpg"
+                  alt="Пакет лайт"
+                  width="370"
+                />
+                <h2 class="price__title">максимальний</h2>
+              </div>
+              <div class="wrap-price--text">
+                <p class="price__text">
+                  — Консультація з організації весільного дня
+                </p>
+                <p class="price__text">
+                  — 12 годин зйомки (від 600 фотографій)
+                </p>
+                <p class="price__text">— Авторська обробка всіх фотографій</p>
+                <p class="price__text">
+                  — Анонс із 30 кадрів на наступний день після весілля
+                </p>
+                <p class="price__text">
+                  — Повністю готовий матеріал — за 3 тиждня
+                </p>
+                <p class="price__text">— Зйомка передвесільної Love story</p>
+                <p class="price__text">— Виготовлення весільного фотоальбому</p>
+                <p class="price__text price__text--total">— 15000 грн</p>
+              </div>
+            </li>
+          </ul>
         </div>
-</section>
-</main>
+      </section>
+    </main>
 
     <footer class="footer">
-        <div class="footer-wrap container">
-            <ul class="footer__contact">
-                <li>
-                    <ul class="social__list">
+      <div class="footer-wrap container">
+        <ul class="footer__contact">
+          <li>
+            <ul class="social__list">
+              <li class="social-item">
+                <a
+                  aria-label="Фейсбук"
+                  target="_blank"
+                  href="https://www.facebook.com/rfotorom"
+                  class="social__link"
+                >
+                  <svg class="social__icon">
+                    <use href="./image/svg/iconset.svg#Facebook"></use>
+                  </svg>
+                </a>
+              </li>
 
-                        <li class="social-item"><a target="_blank" href="https://www.facebook.com/rfotorom" class="social__link">
-                            <svg class="social__icon">
-                                <use href="./image/svg/iconset.svg#Facebook"></use>
-                            </svg>
-                        </a></li>
-        
-                        <li class="social__item"><a target="_blank" href="https://www.instagram.com/rfotorom/" class="social__link">
-                            <svg class="social__icon">
-                                <use href="./image/svg/iconset.svg#Instagram"></use>
-                            </svg>
-                        </a></li>
-        
-                        <li class="social__item"><a href="https://t.me/rfotorom" class="social__link"><svg class="social__icon">
-                            <use href="./image/svg/iconset.svg#Telegram"></use>
-                        </svg></a></li>
-        
-                        <li class="social__item"> <a href="viber://chat?number=%2B380679835129" class="social__link"><svg class="social__icon">
-                            <use href="./image/svg/iconset.svg#Viber"></use>
-                        </svg></a>
-                        </li>
-                    </ul>
-                </li>
-                <li>
-                    <ul class="footer__number ">
-                        <li >
-                            <a href="tel:+380679835129" class="number__link">
-                                <svg class="footer__icon-phone">
-                                  <use href="./image/svg/iconset.svg#Phone"></use>
-                                </svg>
-                            067 983 51 29</a>
-                        </li>
-                        <li ><a href="tel:+380633192022" class="number__link">
-                            <svg class="footer__icon-phone">
-                                <use href="./image/svg/iconset.svg#Phone"></use>
-                              </svg>
-                              063 319 20 22</a>
-                        </li>
-                    </ul>
-                </li>
+              <li class="social__item">
+                <a
+                  aria-label="инстаграм"
+                  target="_blank"
+                  href="https://www.instagram.com/rfotorom/"
+                  class="social__link"
+                >
+                  <svg class="social__icon">
+                    <use href="./image/svg/iconset.svg#Instagram"></use>
+                  </svg>
+                </a>
+              </li>
+
+              <li class="social__item">
+                <a
+                  aria-label="теоеграм"
+                  href="https://t.me/rfotorom"
+                  class="social__link"
+                  ><svg class="social__icon">
+                    <use href="./image/svg/iconset.svg#Telegram"></use>
+                  </svg>
+                </a>
+              </li>
+
+              <li class="social__item">
+                <a
+                  aria-label="вайбер"
+                  href="viber://chat?number=%2B380679835129"
+                  class="social__link"
+                  ><svg class="social__icon">
+                    <use href="./image/svg/iconset.svg#Viber"></use>
+                  </svg>
+                </a>
+              </li>
             </ul>
-                
-
-                    
-
+          </li>
+          <li>
+            <ul class="footer__number">
+              <li>
+                <a
+                  aria-label="телефон"
+                  href="tel:+380679835129"
+                  class="number__link"
+                >
+                  <svg class="footer__icon-phone">
+                    <use href="./image/svg/iconset.svg#Phone"></use>
+                  </svg>
+                  067 983 51 29</a
+                >
+              </li>
+              <li>
+                <a
+                  aria-label="телефон"
+                  href="tel:+380633192022"
+                  class="number__link"
+                >
+                  <svg class="footer__icon-phone">
+                    <use href="./image/svg/iconset.svg#Phone"></use>
+                  </svg>
+                  063 319 20 22</a
+                >
+              </li>
             </ul>
-        </div>
+          </li>
+        </ul>
+      </div>
     </footer>
-<!-- -----------------------------script ------------------------------- -->
-<script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
-    crossorigin="anonymous">
-</script>
-<script>
-$('.header__bg:first').addClass('is-current');
-setInterval(function(){
-  var $next = $('.header__bg.is-current')
-  	.removeClass('is-current')
-  	.next('.header__bg');
-  
-  $next.length ? $next.addClass('is-current') : $('.header__bg:first').addClass('is-current');
-}, 5000);
-</script>
-<script>
-    let header__burger = document.querySelectorAll('.nav-btn');
-    let header_menu = document.querySelector('.nav');
-    let back = document.querySelector('body');
-    let backdrop = document.querySelector('.backdrop');
+    <!-- -----------------------------script ------------------------------- -->
 
-        
-        header__burger.forEach(function (item) {
-        item.onclick = function () {
-            item.classList.toggle('active');
-            header_menu.classList.toggle('active');
-            back.classList.toggle('lock');
-            backdrop.classList.toggle('active');
-        }
-       });
-</script>
-</body>
+    <script src="./js/menu.js"></script>
+  </body>
 </html>

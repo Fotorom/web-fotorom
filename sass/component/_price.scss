@@ -1,56 +1,58 @@
-.price__list{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 30px;
-
-
+.price {
+  margin-top: 64px;
+  margin-bottom: 64px;
 }
-.price__item{
+.price__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+.price__item {
+  max-width: 370px;
+  box-shadow: 0px 1px 3px rgb(0 0 0 / 12%), 0px 1px 1px rgb(0 0 0 / 14%),
+    0px 2px 1px rgb(0 0 0 / 20%);
+  border-radius: 0px 0px 4px 4px;
+  overflow: hidden;
+  @media screen and (min-width: 768px) {
+    max-width: 354px;
+  }
+  @media screen and (min-width: 1200px) {
     max-width: 370px;
-    box-shadow: 0px 1px 3px rgb(0 0 0 / 12%), 0px 1px 1px rgb(0 0 0 / 14%), 0px 2px 1px rgb(0 0 0 / 20%);
-    border-radius: 0px 0px 4px 4px;
-    overflow: hidden;
-    @media screen and(min-width: 768px) {
-        max-width: 354px;
-    }
-    @media screen and(min-width: 1200px) {
-        max-width: 370px;
-    }
+  }
 }
-.wrap-price{
-    position: relative;
+.wrap-price {
+  position: relative;
+}
+.wrap-price--text {
+  padding: 20px 24px;
+}
+.price__title {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  // padding: 18px 0;
 
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 2;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  text-align: center;
+  color: #fff;
+  background: rgba(47, 48, 58, 0.8);
 }
-.wrap-price--text{
-    padding: 20px 24px;
-    
-}
-.price__title{
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    // padding: 18px 0;
+.price__text {
+  // font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.5;
+  letter-spacing: 0.03em;
+  text-align: justify;
 
+  &--total {
+    margin-top: 16px;
     font-weight: 500;
-    font-size: 22px;
-    line-height: 2;
-    text-transform: uppercase;
-    letter-spacing: 0.06em;
-    text-align: center;
-    color: #fff;
-    background: rgba(47, 48, 58, 0.8);
-
-}
-.price__text{
-    font-family: 'Roboto', sans-serif;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.5;
-    letter-spacing: 0.03em;
-    
-    &--total{
-        font-weight: 500;
-    }
+  }
 }

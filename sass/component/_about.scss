@@ -1,0 +1,50 @@
+.about {
+  padding-top: 64px;
+  padding-bottom: 64px;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: center;
+
+    flex-direction: row;
+    gap: 30px;
+  }
+  @media screen and (min-width: 1200px) {
+    align-items: center;
+  }
+}
+
+.about__photo,
+.about__description {
+  width: 100%;
+  @media screen and (min-width: 768px) {
+    width: calc((100% - 30px) / 2);
+  }
+}
+
+.about__photo {
+  width: 400px;
+  height: 400px;
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    width: 350px;
+    height: 350px;
+  }
+}
+
+.about__title {
+  margin-bottom: 24px;
+  font-size: 24px;
+  letter-spacing: 0.1em;
+  line-height: 1.4;
+  color: var(--mainColor);
+}
+.about__text {
+  //   font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.5;
+  letter-spacing: 0.03em;
+  text-align: justify;
+  margin: 16px 0;
+  color: var(--mainColor);
+}

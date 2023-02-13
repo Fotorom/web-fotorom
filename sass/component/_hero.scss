@@ -1,90 +1,267 @@
-.header__bg {
-
-    position: absolute;
-    left: 0;
-    right: 0;
-    z-index: 0;
-
-    opacity: 0;
-    transition: opacity 1s;
-    margin: 0 auto;
-
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    max-width: 600px;
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  @media screen and (max-width: 767px) {
     height: 300px;
-        @media screen and(min-width: 768px) {
-            max-width: 800px;
-            height: 400px;
-            
-        }
-        @media screen and(min-width: 1200px) {
-            max-width: 1400px;
-            height: 600px;
-        
-        }
-
   }
-  .is-current {
-    opacity: 1;
+  @media screen and (min-width: 768px) {
+    height: 400px;
+  }
+  @media screen and (min-width: 1200px) {
+    height: 600px;
+  }
+}
+.hero-wrap {
+  position: relative;
+  z-index: 5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header__bg {
+  position: absolute;
+  left: 0;
+  right: 0;
+  z-index: 0;
+
+  opacity: 0;
+  transition: opacity 1s;
+  margin: 0 auto;
+
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  max-width: 600px;
+  height: 300px;
+
+  @media screen and (min-width: 768px) {
+    max-width: 800px;
+    height: 400px;
+  }
+  @media screen and (min-width: 1200px) {
+    max-width: 1400px;
+    height: 600px;
+  }
+}
+.is-current {
+  opacity: 1;
+}
+
+.header__bg--one {
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.6)
+    ),
+    url(../image/b1.jpg);
+  @media screen and (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.6)
+      ),
+      url(../image/b1-x2.jpg);
   }
 
-  .header__bg--one{
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.6)),url(../image/b1.jpg);
-  }
-  .header__bg--two{
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.6)),url(../image/b2.jpg);
-  }  
-  .header__bg--three{
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.6)),url(../image/b3.jpg);
-  }
-  .hero{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-        @media screen and(max-width: 767px) {
-            height: 300px;
-        }
-        @media screen and(min-width: 768px) {
-            height: 400px;
-        }
-        @media screen and(min-width: 1200px) {
-            height: 600px;
-        }
-  }
-  .hero-wrap{
-    position: relative;
-    z-index: 5;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
+  @media screen and (max-width: 767px) {
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.6)
+      ),
+      url(../image/b1m.jpg);
 
-  
-  .hero__title{
-
-
-    padding: 6px;
-    background-image: linear-gradient(to bottom, rgba(29, 28, 28, 0.3), rgba(69, 69, 72, 0.3));    
-    margin: 0 auto;
-    border-radius: 2%;
-
-    line-height: 1.61;
-    text-align: center;
-    letter-spacing: .09em;
-    text-transform: uppercase;
-    font-weight: 800;
-    color: #fff;
-    opacity: 0.5;
-
-    @media screen and(max-width: 767px) {
-        font-size: 16px;
+    @media screen and (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: linear-gradient(
+          to right,
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.6)
+        ),
+        url(../image/b1m-x2.jpg);
     }
-    @media screen and(min-width: 768px) {
-        font-size: 26px;
-    }
-    @media screen and(min-width: 1200px) {
-        font-size: 36px;
+  }
+}
+
+.header__bg--two {
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.6)
+    ),
+    url(../image/b2.jpg);
+  @media screen and (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.6)
+      ),
+      url(../image/b2-x2.jpg);
+  }
+  @media screen and (max-width: 767px) {
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.6)
+      ),
+      url(../image/b2m.jpg);
+
+    @media screen and (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: linear-gradient(
+          to right,
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.6)
+        ),
+        url(../image/b2m-x2.jpg);
     }
   }
+}
+.header__bg--three {
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.6)
+    ),
+    url(../image/b3.jpg);
+  @media screen and (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.6)
+      ),
+      url(../image/b3-x2.jpg);
+  }
+  @media screen and (max-width: 767px) {
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.6)
+      ),
+      url(../image/b3m.jpg);
+
+    @media screen and (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: linear-gradient(
+          to right,
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.6)
+        ),
+        url(../image/b3m-x2.jpg);
+    }
+  }
+}
+.header__bg--four {
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.6)
+    ),
+    url(../image/b4.jpg);
+  @media screen and (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.6)
+      ),
+      url(../image/b4-x2.jpg);
+  }
+  @media screen and (max-width: 767px) {
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.6)
+      ),
+      url(../image/b4m.jpg);
+
+    @media screen and (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: linear-gradient(
+          to right,
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.6)
+        ),
+        url(../image/b4m-x2.jpg);
+    }
+  }
+}
+.header__bg--five {
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.6)
+    ),
+    url(../image/b5.jpg);
+  @media screen and (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.6)
+      ),
+      url(../image/b5-x2.jpg);
+  }
+  @media screen and (max-width: 767px) {
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.6)
+      ),
+      url(../image/b5m.jpg);
+
+    @media screen and (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: linear-gradient(
+          to right,
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.6)
+        ),
+        url(../image/b5m-x2.jpg);
+    }
+  }
+}
+
+.hero__title {
+  padding: 6px;
+  background-image: linear-gradient(
+    to bottom,
+    rgba(29, 28, 28, 0.3),
+    rgba(69, 69, 72, 0.3)
+  );
+  margin: 0 auto;
+  border-radius: 2%;
+
+  line-height: 1.61;
+  text-align: center;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  font-weight: 800;
+  color: #fff;
+  opacity: 0.5;
+
+  @media screen and (max-width: 767px) {
+    font-size: 16px;
+  }
+  @media screen and (min-width: 768px) {
+    font-size: 26px;
+  }
+  @media screen and (min-width: 1200px) {
+    font-size: 36px;
+  }
+}

@@ -1,63 +1,72 @@
-.footer{
-    background-color: var(--backGroundcolor);
-    margin-top: 4px;
+.footer {
+  background-color: var(--backGroundcolor);
+  margin-top: 4px;
 }
-.footer-wrap{
-    padding-top: 34px;
-    padding-bottom: 34px;
-    // border-top: 1px solid var(--mainColor);
-}
-// .footer__contact{
-//     display: flex;
-//     justify-content: center;
-//     flex-direction: column;
-// }
-.footer{
-    .social__list{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 16px;
-        margin-bottom: 8px;
-    }
+.footer-wrap {
+  padding-top: 34px;
+  padding-bottom: 54px;
 }
 
-
-.social__icon{
-    fill: #b3b3b3;
-    width: 32px;
-    height: 32px;
-
-    transition: fill 200ms linear;
-    .social__link:hover &{
-        fill: #696969;
-    }
-
-}
-
-.footer__number{
+.footer {
+  .social__list {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
-    gap: 6px;
+    gap: 16px;
+    margin-bottom: 8px;
+  }
 }
-.number__link{
-    display: flex;
-    align-items: center;
-    color: var(--mainColor);
-    
-    
-}
-.footer__icon-phone{
-    margin-right: 6px;
 
-    width: 24px;
-    height: 24px;
-    fill: #b3b3b3;
-    .number__link:hover &{
-        fill: #696969;
-    }
+.footer__contact {
+  & > li:not(:last-child) {
+    margin-bottom: 20px;
+  }
+}
+
+.social__icon {
+  fill: #b3b3b3;
+  width: 32px;
+  height: 32px;
+  @media screen and (max-width: 767px) {
+    width: 48px;
+    height: 48px;
+  }
+  transition: fill 200ms linear;
+  .social__link:hover & {
+    fill: #696969;
+  }
+}
+
+.footer__number {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 6px;
+}
+.number__link {
+  display: flex;
+  align-items: center;
+  color: var(--mainColor);
+  color: #696969;
+  @media screen and (max-width: 767px) {
+    font-size: 24px;
+  }
+}
+.footer__icon-phone {
+  margin-right: 6px;
+
+  width: 24px;
+  height: 24px;
+  fill: #b3b3b3;
+
+  @media screen and (max-width: 767px) {
+    width: 48px;
+    height: 48px;
+  }
+  .number__link:hover & {
+    fill: #696969;
+  }
 }
 
 // #b3b3b3
